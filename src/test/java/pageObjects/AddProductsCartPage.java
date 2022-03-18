@@ -1,12 +1,12 @@
 package pageObjects;
 
-import static utils.Utils.*;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-public class AddProductsPage {
+import static utils.Utils.*;
+
+public class AddProductsCartPage {
 
     @FindBy(xpath = "//ul[@class='nav navbar-nav']//li[@class='dropdown']//a[text()='Desktops']")
     private WebElement abaDesktops;

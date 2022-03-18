@@ -8,9 +8,9 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "pretty",
-		"html:target/cucumber.report" }, features = "src/test/resources/features", glue = "stepsDefinitions",
-		// tags = "@addProducts",
-		snippets = SnippetType.CAMELCASE, monochrome = true, dryRun = false)
+        "html:target/cucumber.report" }, features = "src/test/resources/features", glue = "stepsDefinitions",
+//        tags = "@updateCart",
+        snippets = SnippetType.CAMELCASE, monochrome = true, dryRun = false)
 
 public class RunnerTest {
 

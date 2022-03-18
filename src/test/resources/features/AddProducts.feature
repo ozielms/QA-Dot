@@ -1,7 +1,6 @@
 #language: pt
 #enconding: UTF-8
 
-
 @addProducts
 Funcionalidade: Adicionar produtos no carrinho
 

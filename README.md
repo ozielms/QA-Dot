@@ -7,6 +7,7 @@
 * Carrinho de compras:
   * Inserir itens ao carrinho;
   * Remover itens do carrinho.
+  * Atualizar quantidade de itens do carrinho de compras.
 
 
 
@@ -21,12 +22,26 @@
 1. Início - Primeiro commit.
 2. Readme - Inserção do arquivo README.
 3. Correção - Correção do arquivo README.
+4. Alterções
+   1. Alterações no arquivo README;
+   2. Adição do teste updateCart.
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+[Desenvolvido por Oziel Santos](https://ozzybr.com.br)
 
 
 

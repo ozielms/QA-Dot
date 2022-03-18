@@ -27,7 +27,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "AddProductsSteps.naPaginaPrincipalMoverOMouseAteAAbaDesktops()"
+  "location": "AddProductsCartSteps.naPaginaPrincipalMoverOMouseAteAAbaDesktops()"
 });
 formatter.result({
   "status": "passed"
@@ -37,7 +37,7 @@ formatter.step({
   "keyword": "E "
 });
 formatter.match({
-  "location": "AddProductsSteps.clicarEmMac()"
+  "location": "AddProductsCartSteps.clicarEmMac()"
 });
 formatter.result({
   "status": "passed"
@@ -47,7 +47,7 @@ formatter.step({
   "keyword": "Entao "
 });
 formatter.match({
-  "location": "AddProductsSteps.oProdutoEAdicionadoNoCarrinho()"
+  "location": "AddProductsCartSteps.oProdutoEAdicionadoNoCarrinho()"
 });
 formatter.result({
   "status": "passed"
@@ -56,9 +56,9 @@ formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/features/RevoveProducts.feature");
+formatter.uri("file:src/test/resources/features/RemoveProducts.feature");
 formatter.feature({
-  "name": "Excluir produtos do carrinho",
+  "name": "Remover produtos do carrinho",
   "description": "",
   "keyword": "Funcionalidade",
   "tags": [
@@ -68,7 +68,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Excluindo com sucesso",
+  "name": "Removendo produtos",
   "description": "",
   "keyword": "Cenario",
   "tags": [
@@ -101,11 +101,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clicar em view cart",
+  "name": "clicar em cart view",
   "keyword": "E "
 });
 formatter.match({
-  "location": "RemoveProductsSteps.clicarEmViewCart()"
+  "location": "RemoveProductsSteps.clicarEmCartView()"
 });
 formatter.result({
   "status": "passed"
@@ -131,6 +131,74 @@ formatter.result({
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded1.png", null);
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/UpdateCart.feature");
+formatter.feature({
+  "name": "Atualizar quantidade do carrinho de compras",
+  "description": "",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "name": "@updateCart"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Atualizado com sucesso",
+  "description": "",
+  "keyword": "Cenario",
+  "tags": [
+    {
+      "name": "@updateCart"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "acessar o carrinho com produtos e clicar em view cart",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "UpdateCartSteps.oCarrinhoEstiverComProdutos()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "digitar o novo valor em quantity",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "UpdateCartSteps.digitarONovoValorEmQuantity()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicar em update",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "UpdateCartSteps.clicarEmUpdate()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o carrinho de compras e atualizado",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "UpdateCartSteps.oCarrinhoDeComprasEAtualizado()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded2.png", null);
 formatter.after({
   "status": "passed"
 });

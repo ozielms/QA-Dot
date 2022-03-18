@@ -12,23 +12,23 @@ import io.cucumber.core.api.Scenario;
 
 public class Utils {
 
-	public static WebDriver driver;
+    public static WebDriver driver;
 
-	public static void acessarSistema() {
-		System.setProperty("webdriver.chrome.driver", "c:/webdriver/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("https://demo.opencart.com/");
-	}
+    public static void acessarSistema() {
+        System.setProperty("webdriver.chrome.driver", "c:/webdriver/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.get("https://demo.opencart.com/");
+    }
 
-	public static <T> T Na(Class<T> classe) {
-		return PageFactory.initElements(driver, classe);
-	}
+    public static <T> T Na(Class<T> classe) {
+        return PageFactory.initElements(driver, classe);
+    }
 
-	public static void capturarTela(Scenario scenario) {
-		final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-		scenario.embed(screenshot, "image/png");
-	}
+    public static void capturarTela(Scenario scenario) {
+        final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.embed(screenshot, "image/png");
+    }
 
 }
