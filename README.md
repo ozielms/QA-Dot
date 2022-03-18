@@ -26,7 +26,12 @@
    1. Alterações no arquivo README;
    2. Adição do teste updateCart.
 
+###### Tempo investido no teste
 
+* Questionário: 1h30min.
+* Projeto: 
+  * 17/03/2022 - 09:00 às 11:00
+  * 18/03/2022 - 10:00 às 14:30
 
 
 
