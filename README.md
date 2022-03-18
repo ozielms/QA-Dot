@@ -14,6 +14,10 @@
 ###### Outras informações.
 
 + Dentro da pasta target (\target\cucumber.report), encontra-se o arquivo _index.html_. Neste arquivo é exibido o resultado dos testes.
++ Navegador utilizado: 
+  + Google Chrome
+  + Versão 99.0.4844.74 (Versão oficial) 64 bits
+
 
 
 
@@ -26,6 +30,7 @@
    1. Alterações no arquivo README;
    2. Adição do teste updateCart.
 5. Fechar navegador - Adição do driver.quit() em Hooks.java
+5. Readme - Versão do navegador
 
 ###### Tempo investido no teste
 
