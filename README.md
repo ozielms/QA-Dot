@@ -25,13 +25,14 @@
 4. Alterções
    1. Alterações no arquivo README;
    2. Adição do teste updateCart.
+5. Fechar navegador - Adição do driver.quit() em Hooks.java
 
 ###### Tempo investido no teste
 
 * Questionário: 1h30min.
 * Projeto: 
   * 17/03/2022 - 09:00 às 11:00
-  * 18/03/2022 - 10:00 às 14:30
+  * 18/03/2022 - 10:00 às 15:20
 
 
 

@@ -1,7 +1,6 @@
 package stepsDefinitions;
 
-import static utils.Utils.acessarSistema;
-import static utils.Utils.capturarTela;
+import static utils.Utils.*;
 
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
@@ -17,8 +16,7 @@ public class Hooks {
     @After
     public void tearDown(Scenario scenario) {
         capturarTela(scenario);
-        // Pedir para o navegador encerrar depois que encerrar o teste
-        // driver.quit();
+        driver.quit();
     }
 
 }
